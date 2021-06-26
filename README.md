@@ -33,8 +33,6 @@ This is a simple demo which deployment spring-boot application on kubernetes clu
   minikube dashboard
   ```
 
-  ![minikube-dashboard](C:\salem-nabeel-disk\my-works\codes\github\spring-boot-application-deployed-on-kubernetes\minikube-dashboard.png)
-
 ### Deployment Steps From Yaml File [k8s-demo-deployment.yaml]:
 
 ```yaml
