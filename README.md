@@ -73,3 +73,6 @@ minikube tunnel
 kubectl expose deployment k8s-demo-deployment --name=k8s-demo-service --port=9409 --target-port=9409 --type=LoadBalancer
 ```
 
+**Open browser:**
+
+http://localhost:9409/lucky-day
