@@ -32,6 +32,24 @@ This is a simple demo which deployment spring-boot application on kubernetes clu
   ```bash
   minikube dashboard
   ```
+  
+* **Lunch k8s tunnel.**
+
+  ```bash
+  minikube tunnel
+  ```
+  
+* **Expose Deployment.**
+
+  ```bash
+  kubectl expose deployment k8s-demo-deployment --name=k8s-demo-service --port=9409 --target-port=9409 --type=LoadBalancer
+  ```
+  
+* **Open your browser:**
+
+  http://localhost:9409/lucky-day
+
+------
 
 ### Deployment Steps From Yaml File [k8s-demo-deployment.yaml]:
 
@@ -62,17 +80,24 @@ spec:
 ```bash
 kubectl apply -f k8s-demo-deployment.yaml
 ```
+* **Lunch k8s dashboard.**
 
-#### For access the application from browser:
+  ```bash
+  minikube dashboard
+  ```
+  
+* **Lunch k8s tunnel.**
 
-```bash
-minikube tunnel
-```
+  ```bash
+  minikube tunnel
+  ```
+  
+* **Expose Deployment.**
 
-```bash
-kubectl expose deployment k8s-demo-deployment --name=k8s-demo-service --port=9409 --target-port=9409 --type=LoadBalancer
-```
+  ```bash
+  kubectl expose deployment k8s-demo-deployment --name=k8s-demo-service --port=9409 --target-port=9409 --type=LoadBalancer
+  ```
+  
+* **Open your browser:**
 
-**Open your browser:**
-
-http://localhost:9409/lucky-day
+  http://localhost:9409/lucky-day
